@@ -1,0 +1,301 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incredible India | Culture & Heritage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a href="#home" class="logo">✺ Incredible <span>India</span></a>
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+
+    <nav id="navbar">
+        <a href="#home">Home</a>
+        <a href="#festivals">Festivals</a>
+        <a href="#traditions">Traditions</a>
+        <a href="#heritage">Heritage</a>
+        <a href="#regions">Regions</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <button class="search-btn" id="searchBtn" aria-label="Search">⌕</button>
+</header>
+
+<div class="search-box" id="searchBox" hidden>
+    <input type="search" id="searchInput"
+           placeholder="Search festivals, art, regions...">
+    <button id="searchSubmit">Search</button>
+    <p id="searchResult"></p>
+</div>
+
+<main>
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="eyebrow">INDIA'S RICH CULTURE, TIMELESS TRADITIONS</p>
+        <h1>Festivals, Traditions,<br>Heritage <span>&amp; More</span></h1>
+        <p>
+            Discover the colourful festivals, ancient traditions,
+            magnificent monuments and diverse cultures of India.
+        </p>
+        <a href="#festivals" class="btn">Explore India →</a>
+    </div>
+    <div class="hero-note">Many Cultures.<br><span>One India!</span></div>
+</section>
+
+<section class="section" id="festivals">
+    <div class="section-heading">
+        <div>
+            <h2>✺ Popular Festivals</h2>
+            <p>Celebrations that bring India together in joy and unity.</p>
+        </div>
+        <button class="view-btn" id="viewFestivals">View All →</button>
+    </div>
+
+    <div class="festival-grid">
+        <article class="festival-card searchable"
+                 data-search="diwali lights lamps deepavali">
+            <img src="https://images.unsplash.com/photo-1604608672516-8d8d1f2c6e4d?auto=format&fit=crop&w=700&q=80"
+                 alt="Diwali lamps">
+            <div class="card-content">
+                <h3>Diwali</h3>
+                <p>Festival of Lights</p>
+                <button class="learn-btn"
+                        data-title="Diwali"
+                        data-info="Diwali is celebrated with lamps, decorations, sweets and family gatherings.">
+                    Learn More →
+                </button>
+            </div>
+        </article>
+
+        <article class="festival-card searchable"
+                 data-search="holi colours spring">
+            <img src="https://images.unsplash.com/photo-1616606484004-5ef3b4c6f3c1?auto=format&fit=crop&w=700&q=80"
+                 alt="Holi celebration">
+            <div class="card-content">
+                <h3>Holi</h3>
+                <p>Festival of Colours</p>
+                <button class="learn-btn"
+                        data-title="Holi"
+                        data-info="Holi celebrates spring and is known for colourful festivities, music and sweets.">
+                    Learn More →
+                </button>
+            </div>
+        </article>
+
+        <article class="festival-card searchable"
+                 data-search="durga puja bengal goddess">
+            <img src="https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=700&q=80"
+                 alt="Indian religious artwork">
+            <div class="card-content">
+                <h3>Durga Puja</h3>
+                <p>Festival of Devotion</p>
+                <button class="learn-btn"
+                        data-title="Durga Puja"
+                        data-info="Durga Puja is especially popular in West Bengal and features artistic pandals, rituals and cultural performances.">
+                    Learn More →
+                </button>
+            </div>
+        </article>
+
+        <article class="festival-card searchable"
+                 data-search="pongal harvest tamil nadu">
+            <img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?auto=format&fit=crop&w=700&q=80"
+                 alt="Traditional Indian food">
+            <div class="card-content">
+                <h3>Pongal</h3>
+                <p>Festival of Harvest</p>
+                <button class="learn-btn"
+                        data-title="Pongal"
+                        data-info="Pongal is a Tamil harvest festival celebrating nature, the Sun and agricultural abundance.">
+                    Learn More →
+                </button>
+            </div>
+        </article>
+
+        <article class="festival-card searchable"
+                 data-search="onam kerala harvest">
+            <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=700&q=80"
+                 alt="Green landscape of Kerala">
+            <div class="card-content">
+                <h3>Onam</h3>
+                <p>Festival of Togetherness</p>
+                <button class="learn-btn"
+                        data-title="Onam"
+                        data-info="Onam is Kerala's harvest festival, celebrated with flower carpets, traditional meals and cultural events.">
+                    Learn More →
+                </button>
+            </div>
+        </article>
+    </div>
+</section>
+
+<section class="section traditions" id="traditions">
+    <div class="section-heading">
+        <div>
+            <h2>Our Traditions</h2>
+            <p>Living customs passed from one generation to another.</p>
+        </div>
+    </div>
+
+    <div class="tradition-grid">
+        <article class="tradition-card searchable"
+                 data-search="dance bharatanatyam kathak">
+            <div class="tradition-icon">💃</div>
+            <h3>Classical Dance</h3>
+            <p>Discover Bharatanatyam, Kathak, Odissi and other expressive dance traditions.</p>
+        </article>
+
+        <article class="tradition-card searchable"
+                 data-search="food cuisine spices">
+            <div class="tradition-icon">🍛</div>
+            <h3>Indian Cuisine</h3>
+            <p>Explore regional dishes, spices, traditional recipes and festive meals.</p>
+        </article>
+
+        <article class="tradition-card searchable"
+                 data-search="clothing saree kurta textiles">
+            <div class="tradition-icon">🧵</div>
+            <h3>Traditional Clothing</h3>
+            <p>Celebrate India's textiles, embroidery, sarees and regional attire.</p>
+        </article>
+
+        <article class="tradition-card searchable"
+                 data-search="music sitar tabla folk">
+            <div class="tradition-icon">🎵</div>
+            <h3>Music &amp; Folk Arts</h3>
+            <p>Experience classical melodies, folk songs and traditional instruments.</p>
+        </article>
+    </div>
+</section>
+
+<section class="section" id="heritage">
+    <div class="section-heading">
+        <div>
+            <h2>🏛 Cultural Heritage</h2>
+            <p>Explore India's architectural wonders and artistic legacy.</p>
+        </div>
+    </div>
+
+    <div class="heritage-grid">
+        <article class="heritage-card searchable"
+                 data-search="taj mahal monuments architecture">
+            <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=700&q=80"
+                 alt="Taj Mahal">
+            <div>
+                <h3>Monuments</h3>
+                <p>From the Taj Mahal to ancient forts, India's monuments tell stories of the past.</p>
+            </div>
+        </article>
+
+        <article class="heritage-card searchable"
+                 data-search="folk art painting handicrafts">
+            <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=700&q=80"
+                 alt="Art and paintings">
+            <div>
+                <h3>Art &amp; Handicrafts</h3>
+                <p>Discover traditional paintings, pottery, weaving and handmade crafts.</p>
+            </div>
+        </article>
+
+        <article class="heritage-card searchable"
+                 data-search="temples ancient architecture">
+            <img src="https://images.unsplash.com/photo-1600100397608-f0107a6f3f8b?auto=format&fit=crop&w=700&q=80"
+                 alt="Indian temple architecture">
+            <div>
+                <h3>Ancient Architecture</h3>
+                <p>Explore temples, monuments and architectural styles from different eras.</p>
+            </div>
+        </article>
+    </div>
+</section>
+
+<section class="section regions" id="regions">
+    <div class="section-heading">
+        <div>
+            <h2>✦ Explore Indian Regions</h2>
+            <p>Every region has its own language, cuisine, art and festivals.</p>
+        </div>
+    </div>
+
+    <div class="region-grid">
+        <article class="region-card searchable"
+                 data-search="north india himalayas punjab rajasthan">
+            <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=700&q=80"
+                 alt="Himalayas">
+            <div>
+                <h3>North India</h3>
+                <p>Majestic mountains, royal forts and vibrant traditions.</p>
+            </div>
+        </article>
+
+        <article class="region-card searchable"
+                 data-search="south india kerala tamil nadu temples">
+            <img src="https://images.unsplash.com/photo-1600100397608-f0107a6f3f8b?auto=format&fit=crop&w=700&q=80"
+                 alt="South Indian temple">
+            <div>
+                <h3>South India</h3>
+                <p>Ancient temples, classical arts and rich cuisine.</p>
+            </div>
+        </article>
+
+        <article class="region-card searchable"
+                 data-search="east india bengal odisha assam">
+            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=700&q=80"
+                 alt="Indian cultural artwork">
+            <div>
+                <h3>East India</h3>
+                <p>Festivals, folk traditions and artistic heritage.</p>
+            </div>
+        </article>
+
+        <article class="region-card searchable"
+                 data-search="west india gujarat maharashtra goa">
+            <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=700&q=80"
+                 alt="Mumbai coastline">
+            <div>
+                <h3>West India</h3>
+                <p>Colourful celebrations, coastal culture and historic cities.</p>
+            </div>
+        </article>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <p class="eyebrow">UNITY IN DIVERSITY</p>
+    <h2>Many Cultures. One India.</h2>
+    <p>
+        India's cultural heritage is a living treasure of festivals,
+        traditions, languages, art, architecture and shared experiences.
+        Let us celebrate and preserve this diversity for future generations.
+    </p>
+    <a href="#home" class="btn">Back to Top ↑</a>
+</section>
+</main>
+
+<footer>
+    <a href="#home" class="logo">✺ Incredible <span>India</span></a>
+    <p>Celebrating India's cultural heritage and unity in diversity.</p>
+    <div class="footer-links">
+        <a href="#festivals">Festivals</a>
+        <a href="#traditions">Traditions</a>
+        <a href="#heritage">Heritage</a>
+        <a href="#regions">Regions</a>
+    </div>
+    <p class="copyright">© <span id="year"></span> Incredible India | Educational Project</p>
+</footer>
+
+<dialog id="festivalDialog">
+    <button id="closeDialog" class="close-dialog" aria-label="Close">×</button>
+    <h2 id="dialogTitle"></h2>
+    <p id="dialogDescription"></p>
+    <button id="okDialog" class="btn">Explore More →</button>
+</dialog>
+
+<script src="test.js"></script>
+</body>
+</html>
